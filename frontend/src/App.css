@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f4f8;
+  color: #333;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.contenedor {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.encabezado {
+  background: #1d3557;
+  color: #ffffff;
+  text-align: center;
+  padding: 24px 16px;
+}
+
+.encabezado h1 {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+}
+
+.encabezado p {
+  font-size: 0.95rem;
+  color: #d3dded;
+}
+
+.alerta {
+  padding: 14px 20px;
+  margin: 16px 16px 0;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.alerta-exito {
+  background: #d1fae5;
+  color: #065f46;
+  border: 1px solid #6ee7b7;
+}
+
+.alerta-error {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+}
+
+.formulario {
+  padding: 20px;
+}
+
+fieldset {
+  border: 1px solid #d9dee8;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: 700;
+  color: #1d3557;
+  padding: 0 8px;
+  font-size: 0.95rem;
+}
+
+.fila {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+
+.fila label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #4a5568;
+}
+
+.fila input,
+.fila select {
+  padding: 9px 12px;
+  border: 1px solid #c3cbd8;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #333;
+  background: #ffffff;
+}
+
+.fila input:focus,
+.fila select:focus {
+  outline: none;
+  border-color: #1d3557;
+  box-shadow: 0 0 0 3px rgba(29, 53, 87, 0.15);
+}
+
+.fila select:disabled {
+  background: #eef1f5;
+  color: #8a93a3;
+  cursor: not-allowed;
+}
+
+.acciones {
+  text-align: center;
+}
+
+.acciones button {
+  background: #1d3557;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.acciones button:hover:not(:disabled) {
+  background: #14273f;
+}
+
+.acciones button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
