@@ -1,6 +1,6 @@
 # Formulario de Fidelización de Clientes
 
-Proyecto académico (prueba técnica) que implementa un formulario web de
+Prueba técnica que implementa un formulario web de
 fidelización de clientes. Los datos se guardan en **MySQL** a través de una API
 **Spring Boot**, y el formulario se consume desde un frontend de **React (Vite)**.
 
@@ -83,14 +83,7 @@ npm run dev
 La aplicación se abre en `http://localhost:5173`. El frontend consume la API en
 `http://localhost:8080/api`.
 
-### 3. Probar el flujo
 
-1. Completa el formulario (los selects de País → Departamento → Ciudad se llenan
-   en cascada desde el backend).
-2. Pulsa **Registrar cliente**: verás un mensaje de éxito o de error.
-3. Puedes verificar el registro en MySQL:
-
-```sql
 USE fidelizacion_clientes;
 SELECT * FROM cliente;
 ```
